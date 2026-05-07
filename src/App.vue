@@ -15,7 +15,6 @@
 </template>
 
 <style>
-/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +25,6 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-/* Navbar Styles */
 .navbar {
   background: rgba(15, 23, 42, 0.8);
   backdrop-filter: blur(10px);
