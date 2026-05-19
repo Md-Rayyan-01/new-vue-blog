@@ -75,7 +75,7 @@ const submitPost = async () => {
   message.value = "";
 
   try {
-    const response = await fetch("http://rayyan-blog-api.infinityfreeapp.com/api/create.php", {
+    const response = await fetch("https://rayyan-blog-api.infinityfreeapp.com/api/create.php", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(post),
@@ -83,7 +83,7 @@ const submitPost = async () => {
 
     const data = await response.json();
 
-    if (response.ok) {
+    if (data.status === "success") {
       message.value = "Success! Your post is live.";
       isError.value = false;
       post.title = "";
