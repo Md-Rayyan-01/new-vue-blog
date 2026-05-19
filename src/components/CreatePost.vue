@@ -75,6 +75,7 @@ const submitPost = async () => {
   message.value = "";
 
   try {
+    // save
     const response = await fetch("https://rayyan-blog-api.infinityfreeapp.com/api/create.php", {
       method: "POST",
       headers: { "Content-Type": "application/json" },

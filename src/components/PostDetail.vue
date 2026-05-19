@@ -33,6 +33,7 @@ const loading = ref(true);
 
 onMounted(async () => {
   try {
+    // save
     const response = await fetch(`https://rayyan-blog-api.infinityfreeapp.com/api/get_post.php?id=${route.params.id}`);
     const data = await response.json();
     post.value = data;
